@@ -9,6 +9,7 @@ import Foundation
 
 protocol APIKeyable{
     var tmdb_api: String {get}
+    var youtube_api: String {get}
 }
 
 class BaseEnv{
@@ -31,6 +32,9 @@ class DebugEnv: BaseEnv, APIKeyable{
     var tmdb_api: String{
         dict.object(forKey: "tmdb_api") as? String ?? ""
     }
+    var youtube_api: String{
+        dict.object(forKey: "youtube_api") as? String ?? ""
+    }
 }
 
 class ProdEnv: BaseEnv, APIKeyable{
@@ -40,5 +44,8 @@ class ProdEnv: BaseEnv, APIKeyable{
     }
     var tmdb_api: String{
         dict.object(forKey: "tmdb_api") as? String ?? ""
+    }
+    var youtube_api: String{
+        dict.object(forKey: "youtube_api") as? String ?? ""
     }
 }

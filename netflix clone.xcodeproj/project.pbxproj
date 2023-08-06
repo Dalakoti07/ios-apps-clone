@@ -30,6 +30,9 @@
 		B1BD4BCE2A7FD5F100188333 /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BD4BCD2A7FD5F100188333 /* TitleCollectionViewCell.swift */; };
 		B1BD4BD02A7FDFF400188333 /* env.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1BD4BCF2A7FDFF400188333 /* env.plist */; };
 		B1BD4BD22A7FE29800188333 /* ProjectEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BD4BD12A7FE29800188333 /* ProjectEnv.swift */; };
+		B1BD4BD42A7FE82300188333 /* YoutubeSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BD4BD32A7FE82300188333 /* YoutubeSearchResponse.swift */; };
+		B1BD4BD62A7FEC9000188333 /* TitlePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BD4BD52A7FEC9000188333 /* TitlePreviewViewController.swift */; };
+		B1BD4BD82A7FECD600188333 /* TitlePreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BD4BD72A7FECD600188333 /* TitlePreviewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +59,9 @@
 		B1BD4BCD2A7FD5F100188333 /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
 		B1BD4BCF2A7FDFF400188333 /* env.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = env.plist; sourceTree = "<group>"; };
 		B1BD4BD12A7FE29800188333 /* ProjectEnv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectEnv.swift; sourceTree = "<group>"; };
+		B1BD4BD32A7FE82300188333 /* YoutubeSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeSearchResponse.swift; sourceTree = "<group>"; };
+		B1BD4BD52A7FEC9000188333 /* TitlePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePreviewViewController.swift; sourceTree = "<group>"; };
+		B1BD4BD72A7FECD600188333 /* TitlePreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePreviewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				B1BD4BB92A7FB00E00188333 /* Title.swift */,
+				B1BD4BD32A7FE82300188333 /* YoutubeSearchResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -143,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				B1BD4BC82A7FCBE500188333 /* TitleViewModel.swift */,
+				B1BD4BD72A7FECD600188333 /* TitlePreviewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -168,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				B1BD4BCB2A7FD5A200188333 /* SearchResultsViewController.swift */,
+				B1BD4BD52A7FEC9000188333 /* TitlePreviewViewController.swift */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -250,9 +259,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1BD4BD82A7FECD600188333 /* TitlePreviewViewModel.swift in Sources */,
 				B1BD4BC72A7FCBA200188333 /* TitleTableViewCell.swift in Sources */,
 				B1BD4BD22A7FE29800188333 /* ProjectEnv.swift in Sources */,
 				B1BD4BC02A7FB98F00188333 /* TitleCollectionViewCall.swift in Sources */,
+				B1BD4BD42A7FE82300188333 /* YoutubeSearchResponse.swift in Sources */,
 				B1BD4BAB2A7F7E9600188333 /* SearchViewController.swift in Sources */,
 				B1BD4B942A7F786B00188333 /* MainTabViewController.swift in Sources */,
 				B1BD4BCE2A7FD5F100188333 /* TitleCollectionViewCell.swift in Sources */,
@@ -261,6 +272,7 @@
 				B1BD4B902A7F786B00188333 /* AppDelegate.swift in Sources */,
 				B1BD4BB62A7F9B2200188333 /* HeroHeaderUiView.swift in Sources */,
 				B1BD4B922A7F786B00188333 /* SceneDelegate.swift in Sources */,
+				B1BD4BD62A7FEC9000188333 /* TitlePreviewViewController.swift in Sources */,
 				B1BD4BCC2A7FD5A200188333 /* SearchResultsViewController.swift in Sources */,
 				B1BD4BBC2A7FB32100188333 /* Extensions.swift in Sources */,
 				B1BD4BA92A7F7E4900188333 /* UpcomingViewController.swift in Sources */,
