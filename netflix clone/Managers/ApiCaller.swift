@@ -8,7 +8,7 @@
 import Foundation
 
 struct Constants{
-    static let apiKey = "5fe067e52253dbc3de67b0dbba1654c1"
+    static let apiKey = DebugEnv().tmdb_api
     static let baseUrl = "https://api.themoviedb.org"
 }
 
