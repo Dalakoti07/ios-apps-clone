@@ -20,6 +20,7 @@ class TitleCollectionViewCall: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        addSubview(posterImageView)
     }
     
     required init?(coder: NSCoder){
@@ -33,8 +34,9 @@ class TitleCollectionViewCall: UICollectionViewCell {
     
     public func configure(with model: String){
         guard let url = URL(string:"https://image.tmdb.org/t/p/w500\(model)") else {return}
-        print("url: \(url)")
+        // print("url: \(url)")
         posterImageView.sd_setImage(with: url, completed: nil)
+        // posterImageView.image = UIImage(named: "john_wick")
     }
     
 }
