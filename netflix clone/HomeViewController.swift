@@ -31,10 +31,10 @@ class HomeViewController: UIViewController {
         homeFeedTable.delegate = self
         homeFeedTable.dataSource = self
         
-        // for top heading in tabe view
-        homeFeedTable.tableHeaderView = UIView(
-            frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450)
-        )
+        // for top hero header in tabe view
+        homeFeedTable.tableHeaderView = HeroHeaderUiView(frame: CGRect(
+            x: 0, y: 0, width: view.bounds.width, height: 450
+        ))
     }
     
     override func viewDidLayoutSubviews() {
