@@ -53,46 +53,6 @@ class HomeViewController: UIViewController {
         homeFeedTable.tableHeaderView = HeroHeaderUiView(frame: CGRect(
             x: 0, y: 0, width: view.bounds.width, height: 450
         ))
-        getDataFromServer()
-    }
-    
-    private func getDataFromServer(){
-        /*
-        APICaller.shared.getTrendingMovies{ results in
-            switch results{
-            case .success(let movies):
-                print(movies)
-            case .failure(let error):
-                print(error)
-            }
-        }
-        
-        APICaller.shared.getTrendingTVs{ results in
-            switch results{
-            case .success(let movies):
-                print(movies)
-            case .failure(let error):
-                print(error)
-            }
-        }
-         APICaller.shared.getPopularMovies{ results in
-             switch results{
-             case .success(let movies):
-                 print(movies)
-             case .failure(let error):
-                 print(error)
-             }
-         }
-         APICaller.shared.getTopRatedMovies{ results in
-             switch results{
-             case .success(let movies):
-                 print(movies)
-             case .failure(let error):
-                 print(error)
-             }
-         }
-        */
-        
     }
     
     func configureNavBar(){
