@@ -30,6 +30,11 @@ class HomeViewController: UIViewController {
         // add data
         homeFeedTable.delegate = self
         homeFeedTable.dataSource = self
+        
+        // for top heading in tabe view
+        homeFeedTable.tableHeaderView = UIView(
+            frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450)
+        )
     }
     
     override func viewDidLayoutSubviews() {
