@@ -31,10 +31,26 @@ class HomeViewController: UIViewController {
         homeFeedTable.delegate = self
         homeFeedTable.dataSource = self
         
+        configureNavBar()
+        
         // for top hero header in tabe view
         homeFeedTable.tableHeaderView = HeroHeaderUiView(frame: CGRect(
             x: 0, y: 0, width: view.bounds.width, height: 450
         ))
+    }
+    
+    func configureNavBar(){
+        var image = UIImage(named: "netflix")
+        image = image?.withRenderingMode(.alwaysOriginal)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(
+            image: image, style: .done, target: self, action: nil
+        )
+        
+        navigationItem.rightBarButtonItems = [
+            UIBarButtonItem(image: UIImage(systemName: "person"), style: .done, target: self, action: nil),
+            UIBarButtonItem(image: UIImage(systemName: "play.rectangle"), style: .done, target: self, action: nil)
+        ]
+        navigationController?.navigationBar.tintColor = .white
     }
     
     override func viewDidLayoutSubviews() {
