@@ -84,4 +84,13 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
         return 40
     }
     
+    // a solution to make sure that navigation header does not sticky to the top
+    // table view inherits scrollview, and here is the solution
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let defaultOffset = view.safeAreaInsets.top
+        let offset = scrollView.contentOffset.y + defaultOffset
+        
+        navigationController?.navigationBar.transform = .init(translationX: 0, y: min(0, -offset))
+    }
+    
 }
