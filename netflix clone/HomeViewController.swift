@@ -11,8 +11,8 @@ class HomeViewController: UIViewController {
 
     let sectionTitles: [String] = [
         "Trending Movies",
-        "Popular",
         "Trending TV",
+        "Popular",
         "Upcoming Movies",
         "Top Rated"
     ]
@@ -45,10 +45,11 @@ class HomeViewController: UIViewController {
         homeFeedTable.tableHeaderView = HeroHeaderUiView(frame: CGRect(
             x: 0, y: 0, width: view.bounds.width, height: 450
         ))
-        getTrendingMovies()
+        getDataFromServer()
     }
     
-    private func getTrendingMovies(){
+    private func getDataFromServer(){
+        /*
         APICaller.shared.getTrendingMovies{ results in
             switch results{
             case .success(let movies):
@@ -57,6 +58,33 @@ class HomeViewController: UIViewController {
                 print(error)
             }
         }
+        
+        APICaller.shared.getTrendingTVs{ results in
+            switch results{
+            case .success(let movies):
+                print(movies)
+            case .failure(let error):
+                print(error)
+            }
+        }
+         APICaller.shared.getPopularMovies{ results in
+             switch results{
+             case .success(let movies):
+                 print(movies)
+             case .failure(let error):
+                 print(error)
+             }
+         }
+         APICaller.shared.getTopRatedMovies{ results in
+             switch results{
+             case .success(let movies):
+                 print(movies)
+             case .failure(let error):
+                 print(error)
+             }
+         }
+        */
+        
     }
     
     func configureNavBar(){
@@ -108,7 +136,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
         header.textLabel?.font = .systemFont(ofSize: 18, weight: .semibold)
         header.textLabel?.frame = CGRect(x: header.bounds.origin.x + 20, y: header.bounds.origin.y, width: 100, height: header.bounds.height)
         header.textLabel?.textColor = .white
-        header.textLabel?.text = header.textLabel?.text?.lowercased()
+        header.textLabel?.text = header.textLabel?.text?.capitalizeFirstLetter()
     }
     
     // return section title
