@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B1EDFF6F2A890A1900C7A4F8 /* pokemonAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EDFF6E2A890A1900C7A4F8 /* pokemonAppApp.swift */; };
+		B1EDFF6F2A890A1900C7A4F8 /* pokemonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EDFF6E2A890A1900C7A4F8 /* pokemonApp.swift */; };
 		B1EDFF712A890A1900C7A4F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EDFF702A890A1900C7A4F8 /* ContentView.swift */; };
 		B1EDFF732A890A1A00C7A4F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1EDFF722A890A1A00C7A4F8 /* Assets.xcassets */; };
 		B1EDFF762A890A1A00C7A4F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1EDFF752A890A1A00C7A4F8 /* Preview Assets.xcassets */; };
@@ -22,7 +22,7 @@
 
 /* Begin PBXFileReference section */
 		B1EDFF6B2A890A1900C7A4F8 /* pokemonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pokemonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1EDFF6E2A890A1900C7A4F8 /* pokemonAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pokemonAppApp.swift; sourceTree = "<group>"; };
+		B1EDFF6E2A890A1900C7A4F8 /* pokemonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pokemonApp.swift; sourceTree = "<group>"; };
 		B1EDFF702A890A1900C7A4F8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B1EDFF722A890A1A00C7A4F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1EDFF752A890A1A00C7A4F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -69,10 +69,10 @@
 				B1EDFF8D2A893B8D00C7A4F8 /* viewModels */,
 				B1EDFF8A2A893B5200C7A4F8 /* models */,
 				B1EDFF802A893A9000C7A4F8 /* data */,
-				B1EDFF6E2A890A1900C7A4F8 /* pokemonAppApp.swift */,
 				B1EDFF832A893ADD00C7A4F8 /* helpers */,
 				B1EDFF702A890A1900C7A4F8 /* ContentView.swift */,
 				B1EDFF722A890A1A00C7A4F8 /* Assets.xcassets */,
+				B1EDFF6E2A890A1900C7A4F8 /* pokemonApp.swift */,
 				B1EDFF742A890A1A00C7A4F8 /* Preview Content */,
 			);
 			path = pokemonApp;
@@ -211,7 +211,7 @@
 				B1EDFF942A893C0100C7A4F8 /* PokemonDetailView.swift in Sources */,
 				B1EDFF852A893AF400C7A4F8 /* Helpers.swift in Sources */,
 				B1EDFF962A893C1D00C7A4F8 /* PokemonView.swift in Sources */,
-				B1EDFF6F2A890A1900C7A4F8 /* pokemonAppApp.swift in Sources */,
+				B1EDFF6F2A890A1900C7A4F8 /* pokemonApp.swift in Sources */,
 				B1EDFF8C2A893B7500C7A4F8 /* PokemonModel.swift in Sources */,
 				B1EDFF8F2A893BA700C7A4F8 /* ViewModel.swift in Sources */,
 				B1EDFF882A893B3D00C7A4F8 /* PokemonManager.swift in Sources */,
